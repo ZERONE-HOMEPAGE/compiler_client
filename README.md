@@ -148,7 +148,7 @@ online-code-compiler-frontend/
 
 <div align="center">
 
-**⭐ 이 프로젝트는 Cusor기반으로 제작되었습니다 ⭐**
+**⭐ 이 프로젝트는 Cursor기반으로 제작되었습니다 ⭐**
 
 Made by **playlistSDY**
 
