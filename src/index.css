@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1e1e1e;
+  color: #cccccc;
+  overflow: hidden;
+}
+
+code {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* Monaco Editor 커스터마이징 */
+.monaco-editor {
+  border-radius: 0 !important;
+}
+
+.monaco-editor .overflow-guard {
+  border-radius: 0 !important;
+}
+
+/* 스크롤바 스타일링 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #424242;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f4f4f;
+}
+
+/* 포커스 아웃라인 제거 */
+*:focus {
+  outline: none;
+}
+
+/* 선택 텍스트 스타일 */
+::selection {
+  background-color: #264f78;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: #264f78;
+  color: #ffffff;
+} 
