@@ -62,14 +62,24 @@ int main() {
     return 0;
 }`,
     python: `# Python 코드를 여기에 작성하세요
-print("Hello, Zerone!")`
+print("Hello, Zerone!")`,
+    java: `// Java 코드를 여기에 작성하세요
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, Zerone!");
+    }
+}`,
+    javascript: `// JavaScript 코드를 여기에 작성하세요
+console.log("Hello, Zerone!");`
   }), []);
 
   // 언어별 Monaco Editor 설정
   const languageConfigs = {
     python: 'python',
     cpp: 'cpp',
-    c: 'c'
+    c: 'c',
+    java: 'java',
+    javascript: 'javascript'
   };
 
   // 모바일 감지 함수
@@ -595,7 +605,7 @@ print("Hello, Zerone!")`
             window.currentDecorations = null;
           }
         }
-      }, 300); // 300ms 디바운싱
+      }, 500); // 300ms 디바운싱
     }
   };
 
@@ -765,6 +775,18 @@ print("Hello, Zerone!")`
         /fgets\s*\(/i,
         /getchar\s*\(/i,
         /getc\s*\(/i
+      ],
+      java: [
+        /Scanner\s*\(/i,
+        /System\.in/i,
+        /BufferedReader\s*\(/i,
+        /InputStreamReader\s*\(/i
+      ],
+      javascript: [
+        /readline\s*\(/i,
+        /prompt\s*\(/i,
+        /process\.stdin/i,
+        /require\s*\(\s*['"]readline['"]\s*\)/i
       ]
     };
     
